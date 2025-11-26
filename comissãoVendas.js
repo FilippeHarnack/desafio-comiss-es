@@ -15,7 +15,6 @@ function calcularComissoes(dados) {
     comissoes[vendedor] = (comissoes[vendedor] || 0) + comissao;
   }
 
-  // arredonda p/ 2 casas
   for (const v in comissoes) {
     comissoes[v] = Number(comissoes[v].toFixed(2));
   }
@@ -23,7 +22,6 @@ function calcularComissoes(dados) {
   return comissoes;
 }
 
-// Exemplo com o JSON do desafio:
 const dadosVendas = {
   vendas: [
     { vendedor: "João Silva", valor: 1200.50 },
